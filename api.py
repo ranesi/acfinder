@@ -10,10 +10,10 @@ def regex(text, fltr, s=''):
 
 
 def get_key():
-    
+
     with open(os.path.join('key.txt')) as f:
         ret = f.read()
-    return regex(ret, '[^a-zA-Z1-9]')
+    return regex(ret, '[^a-zA-Z0-9]')
 
 
 def get_tz(lat: float, lon: float) -> None:
